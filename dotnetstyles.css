@@ -4,6 +4,14 @@
 
 body{
     margin-left: 2%;
+    border: 2px solid black;
+    border-radius: 20px;
+    /* background-color: beige; */
+}
+
+#container{
+    background-color: white;
+    margin: 20px;
 }
 
 .brace, .xinh{
