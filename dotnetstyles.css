@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 2%;
+}
+
+.brace, .xinh{
+    background-color: yellow;
+}
+
+a:link{
+    text-decoration: none;
+}
