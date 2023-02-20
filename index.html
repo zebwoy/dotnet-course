@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>DOTNET FULLSTACK 70/30</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="course">
+            <h1>Topics that will be covered in this course</h1>
+            <ol>
+                <li><a href="#1">Object Oriented Programming</a></li>
+                <li><a href="#2">C# (A programmign language)<a></li>
+                <li>ASP.NET</li>
+                <li>Model View Controller (MVC)</li>
+                <li>jQuery / jQuery UI</li>
+                <li>Bootstrap v3.4</li>
+                <li>SQL Server</li>
+                <li>ASP.NET Web Api 2</li>
+                <li>Design Pattern</li>
+                <li>Live Project</li>
+                <li>Javascript (js)</li>
+                <li>Language Integrated Query (Linq)</li>
+            </ol>
+        </div>
+        <hr>
+        <div class="oops" id="1">
+            <h2>Objected Oriented Programming system [OOPs]</h2>
+            <p>To convert <strong>real world</strong> 'object' into <strong>computer world</strong> (abstract world)</p>
+            </di>
+            <br>
+            <div class="pillar-of-oops">
+                <h3>4 Pillars of OOPs</h3>
+                <ul>
+                    <li><a href="#abstraction">Abstraction<a></li>
+                    <li><a href="#encapsulation">Encapsulation<a></li>
+                    <li><a href="#inheritance">Inheritance<a></li>
+                    <li><a href="#polymorphism">Polymorphism</a></li>
+                </ul>
+            </div>
+            <div class="concepts-of-oops">
+                <h3>7 Concepts of OOPs</h3>
+                <ul>
+                    <li>Class</li>
+                    <li>Object</li>
+                    <li>Message Binding</li>
+                    <li>Dynamic Binding</li>
+                    <li>Abstraction & Encapsulation</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="cls-obj">
+                <h3>1.Class</h3>
+                <p>A class is an abstract blueprint used to create more specific objects.</p>
+                <h3>2.Object</h3>
+                <p>An object is an instance derived from a class.</p>
+                <p>Example: A class can be viewed like the cookie cutter. Every cookie (derived object) from this
+                    blueprint
+                    will have the same basic structure. But every cookie (object) could be further individualized
+                    with colored icing, toppings, etc…</p>
+            </div>
+            <hr>
+            <div class="abs" id="abstraction">
+                <h3>3.Abstraction</h3>
+                <p>Main goal is to <strong>Hide complexity details</strong> from the user and <strong>use simple
+                        things</strong> to represent complexity</p>
+            </div>
+            <div class="enc" id="encapsulation">
+                <h3>4.Encapsulation</h3>
+                <p>Pack all important information into a single package using curly braces <span
+                        class="yellow-highlight">{
+                        }</span>
+                </p>
+            </div>
+            <hr>
+            <div class="inh" id="inheritance">
+                <h3>5.Inheritance</h3>
+                <p>Baap ki jaydaat bete ko = Parent class <i>attributes and methods</i> can be called or used by child
+                    class</p>
+                <ul>
+                    <li>Derived Class (child) - the class that inherits from another class</li>
+                    <li>Base Class (parent) - the class being inherited from</li>
+                </ul>
+                <p>To inherit from a class, use the <span>:</span> symbol.</p>
+                <p><u>Types of Inheritance</u></p>
+                <ol>
+                    <li>Single</li>
+                    <li>Multi-level</li>
+                    <li>Hierarchical</li>
+                    <li>Multiple</li>
+                    <li>Hybrid</li>
+                </ol>
+            </div>
+            <img src="inh.jpg" alt="Inheritance">
+            <br>
+            <br>
+            <br>
+            <p class="yellow-highlight">Multiple Inheritance, which in turn originates hybrid Inheritance by being used
+                multiple
+                times, is something that is not used atleast directy in C# Programming Language because of the DIAMOND
+                PROBLEM.</p>
+            <img src="xinh.jpg" alt="Multiple & Hybrid Inheritance">
+        </div>
+        <div class="polymorphism" id="polymorphism">
+            <h3>Polymorphism</h3>
+            <p>It's a concept of OOPs which allows us to perform a single action in different ways. In other words,
+                polymorphism allows you to define one interface and have multiple implementations. The word “poly” means
+                many and “morphs” means forms, So it means many forms.</p>
+            <p>Polymorphism is mainly divided into two types:</p>
+            <li>Compile-time Polymorphism</li>
+            <li>Runtime Polymorphism</li>
+            <p>Example: Lets take the '+' (plus) operator</p>
+            <div class="addition-operation" title="">
+                <div>
+                    <p>2</p>
+                    <p>(operand)</p>
+                </div>
+                <div class="right-left-spacing">
+                    <p>+</p>
+                </div>
+                <div>
+                    <p>3</p>
+                    <p>(operand)</p>
+                </div>
+                <div class="right-left-spacing">
+                    <p>=</p>
+                </div>
+                <div class="right-left-spacing">
+                    <p>5</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="concatenation">
+                <div>
+                    <p>A</p>
+                    <p>(operand)</p>
+                </div>
+                <div class="right-left-spacing">
+                    <p>+</p>
+                </div>
+                <div>
+                    <p>B</p>
+                    <p>(operand)</p>
+                </div>
+                <div class="right-left-spacing">
+                    <p>=</p>
+                </div>
+                <div class="right-left-spacing">
+                    <p>AB</p>
+                </div>
+            </div>
+            <p>Here as we can see the '+' (plus) operator has only one interface but is implemented twice differently.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h3>Compiler and Interpreter</h3>
+            <img src="compiler&interpreter.png" alt="compiler&interpreter">
+        </div>
+        <hr>
+        <div>
+            <h3>Implicit and Explicit</h3>
+            <p>
+                In C#, "implicit" and "explicit" refer to how type conversions are performed between different data
+                types.
+            </p>
+            <p>
+                An implicit conversion occurs automatically, without requiring any special syntax or method call. It
+                happens when the conversion is safe and doesn't result in any data loss. For example, converting an
+                integer to a float is an implicit conversion, since the float data type can represent all the values of
+                an integer. In C#, implicit conversions are handled by the compiler, and they happen automatically when
+                needed.
+            </p>
+            <p>Explicit conversion occurs manually and requires a specific syntax or method call, and is used when
+                converting between data types that may not be safe to convert or could result in data loss. For example,
+                converting a float to an integer is an explicit conversion. This type of conversion can be performed
+                using <span class="yellow-highlight">casting syntax ((int)floatValue)</span> or by calling a <span
+                    class="yellow-highlight">conversion method (ToInt32(floatValue))</span>.</p>
+        </div>
+        <hr>
+        <h3>9 points to summarize ASP.NET MVC with anecdotal examples for each</h3>
+        <button id="toggle-button">Click to view them</button>
+        <div id="content">
+            <ol>
+                <li><a href="#mvc-info" class="blinkable">Model-View-Controller (MVC)</a></li>
+                <li><a href="#components-info" class="blinkable">Components</a></li>
+                <li><a href="#routing-engine-info" class="blinkable">Routing engine</a></li>
+                <li><a href="#controller-info" class="blinkable">Controller</a></li>
+                <li><a href="#view-engine-info" class="blinkable">View engine</a></li>
+                <li><a href="#model-binder-info" class="blinkable">Model binder</a></li>
+                <li><a href="#caching-info" class="blinkable">Caching</a></li>
+                <li><a href="#authentication-info" class="blinkable">Authentication</a></li>
+                <li><a href="#authorization-info" class="blinkable">Authorization</a></li>
+            </ol>
+            <ol>
+                <br>
+                <li id="mvc-info" class="info">Model-View-Controller (MVC): MVC is a software architectural pattern used in
+                    web
+                    application
+                    development. The basic idea behind MVC is to separate different parts of an application into three
+                    components: the Model, View, and Controller. The Model represents the data and business logic of an
+                    application, the View represents the user interface, and the Controller handles user input and manages
+                    the communication between the Model and View.
+                    <p>Example: Think of a restaurant that uses an online ordering system. The menu and ordering form (View)
+                        are displayed on the customer's screen, the customer selects the items they want (Controller), and
+                        the system processes the order and sends it to the kitchen (Model).</p>
+                </li>
+                <br>
+                <li id="components-info" class="info">Components: Components are reusable software parts that can be used to
+                    build larger
+                    software systems. In
+                    the context of ASP.NET Framework MVC, components are typically pre-built libraries that can be added to
+                    an application to provide additional functionality.
+                    <p>Example: Think of a Lego set that comes with different pre-built pieces (components) like wheels,
+                        doors, and windows. These pieces can be used to build different types of vehicles (application).</p>
+                </li>
+                <br>
+                <li id="routing-engine-info" class="info">Routing engine: A routing engine is a component that maps incoming
+                    HTTP requests to the appropriate
+                    controller action. The routing engine is responsible for determining which controller and action should
+                    handle a particular request based on the URL and other factors.
+                    <p>Example: Imagine you are driving in a city and want to find a particular store. You use a map app on
+                        your phone (routing engine) to enter the store's address (URL) and the app shows you the best route
+                        to get there.</p>
+                </li>
+                <br>
+                <li id="controller-info" class="info">Controller: In ASP.NET Framework MVC, a controller is a component that handles
+                    incoming HTTP requests
+                    and generates an HTTP response. The controller is responsible for interacting with the Model to retrieve
+                    or update data, and for selecting the appropriate View to display the response to the user.
+                    <p>Example: If you order a pizza from a restaurant's online ordering system, the system's controller
+                        would receive your order and use the Model to update the restaurant's database with your order
+                        information. Then, the controller would select the appropriate View to show you a confirmation page.
+                    </p>
+                </li>
+                <br>
+                <li id="view-engine-info" class="info">View engine: A View engine is a component that renders the HTML markup that is sent back to the user's
+                    web browser. The View engine takes data from the Model and generates an HTML page that is sent back to
+                    the user.
+                    <p>Example: If you search for a product on an e-commerce website, the View engine would take the data
+                        from the Model (product name, price, description, etc.) and generate an HTML page that shows the
+                        product details to you.</p>
+                </li>
+                <br>
+                <li id="model-binder-info" class="info">Model binder: A Model binder is a component that maps data from incoming HTTP requests to the
+                    appropriate Model object. The Model binder is responsible for converting the data in the HTTP request
+                    (e.g., form data, query string parameters) into an object that can be used by the Controller.
+                    <p>Example: If you fill out a form on a website to create an account, the Model binder would take the
+                        data you entered (name, email, password, etc.) and map it to an object that can be used by the
+                        Controller to create your account.</p>
+                </li>
+                <br>
+                <li id="caching-info" class="info">Caching: Caching is the process of storing data in memory so that it can be retrieved more quickly. In
+                    the context of web applications, caching can improve performance by reducing the amount of time it takes
+                    to generate a response.
+                    <p>Example: Imagine you are working on a group project in school and you frequently refer to a book for
+                        information. Instead of having to go to the library each time you need to look something up, you
+                        decide to keep the book on your desk (cache) so that you can access it more quickly.</p>
+                </li>
+                <br>
+                <li id="authentication-info" class="info">Authentication: Authentication is the process of verifying the identity of a user. In the context of web
+                    applications, authentication is typically done by requiring users to enter a username and password, and
+                    then verifying those credentials against a database of authorized users.
+                    <p>Example: If you want to log in to your online bank account, the system will ask you to enter your
+                        username and password (authentication). If the system is able to verify that your credentials are
+                        correct, you will be granted access to your account.</p>
+                </li>
+                <br>
+                <li id="authorization-info" class="info">Authorization: Authorization is the process of determining what actions a user is allowed to perform
+                    within an application. This is typically done by assigning roles or permissions to individual users or
+                    groups of users.
+                    <p>Example: If you work for a company that uses a web-based HR system, your account might have different
+                        levels of authorization depending on your role in the company. For example, a manager might have
+                        permission to view and edit employee records, while a regular employee might only be able to view
+                        their own records.</p>
+                </li>
+            </ol>
+        </div>
+        <button id="scrollToTopBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+        <script src="script.js"></script>
+</body>
+
+</html>
